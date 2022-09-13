@@ -1,0 +1,9 @@
+<h1 mat-dialog-title>Hi There</h1>
+<div mat-dialog-content>
+  <div *ngFor="let status of callService.statuses">
+    <span>{{ status }}</span>
+  </div>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Close</button>
+</div>
